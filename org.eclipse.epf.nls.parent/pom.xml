@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- - Copyright (c) 2011/2012, C4biz IT S/C. and others. - All rights reserved. 
+	This program and the accompanying materials - are made available under the 
+	terms of the Eclipse Public License v1.0 - which accompanies this distribution, 
+	and is available at - http://www.eclipse.org/legal/epl-v10.html - Contributors: 
+	- Cristiano Gavião (C4biz IT). - added Tycho cross platform building. -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.eclipse.epf</groupId>
+	<artifactId>org.eclipse.epf.nls.parent</artifactId>
+	<version>1.5.3-SNAPSHOT</version>
+	<name>EPF NLS Parent POM</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho-version>0.13.0</tycho-version>
+		<tycho-groupid>org.eclipse.tycho</tycho-groupid>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<EPF-P2>jar:file:/Users/cvgaviao/Development/Development_Eclipse/EPF-Composer/org.eclipse.epf.p2.core/target/org.eclipse.epf.p2.core.zip!/</EPF-P2>
+	</properties>
+
+	<developers>
+		<developer>
+			<id>cvgaviao</id>
+			<name>Cristiano Gavião</name>
+			<email>cvgaviao@c4biz.com</email>
+			<url>www.c4biz.com.br/team/cvgaviao</url>
+			<organization>C4biz Information Technology S/C.</organization>
+			<organizationUrl>www.c4biz.com.br</organizationUrl>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+
+	<repositories>
+		<repository>
+			<id>EPF CORE</id>
+			<url>${EPF-P2}</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>Babel</id>
+			<url>http://download.eclipse.org/technology/babel/update-site/R0.9.1/helios</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+	<modules>
+		<!-- National Language Modules -->
+		<module>../org.eclipse.epf.nls.p2</module>
+		<module>../nl1/plugins/org.eclipse.epf.authoring.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.base.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.common.html.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.common.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.common.service.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.common.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.common.win32.win32.x86.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.dataexchange.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.ad.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.add.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.core.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.edit.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.model.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.diagram.wpdd.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.doc.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.export.msp.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.export.msp.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.export.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.export.xml.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.help.doc.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.import.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.import.xml.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.edit.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.edit.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.persistence.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.ui.xmi.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.library.xmi.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.migration.diagram.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.msproject.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.platform.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.publish.layout.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.publishing.cmdline.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.publishing.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.publishing.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.rcp.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.rcp.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.richtext.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.search.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.search.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.services.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.ui.intro.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.ui.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.uma.ecore.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.uma.edit.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.uma.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.validation.nl1</module>
+		<module>../nl1/plugins/org.eclipse.epf.xml.uma.nl1</module>
+		<module>../nl1/features/org.eclipse.epf.base.feature.nls1</module>
+		<module>../nl1/features/org.eclipse.epf.doc.feature.nls1</module>
+		<module>../nl1/features/org.eclipse.epf.platform.feature.nls1</module>
+		<module>../nl1/features/org.eclipse.epf.product.feature.nls1</module>
+		<module>../nl1/features/org.eclipse.epf.rcp.feature.nls1</module>
+		<module>../nl1/features/org.eclipse.epf.richtext.feature.nls1</module>
+		<module>../nl1/features/org.eclipse.epf.common.html.feature.nls1</module>
+	</modules>
+
+
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<resolver>p2</resolver>
+						<pomDependencies>consider</pomDependencies>
+						<environments>
+							<environment>
+								<os>linux</os>
+								<ws>gtk</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>linux</os>
+								<ws>gtk</ws>
+								<arch>x86_64</arch>
+							</environment>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86</arch>
+							</environment>
+							<!-- <environment> -->
+							<!-- <os>win32</os> -->
+							<!-- <ws>win32</ws> -->
+							<!-- <arch>x86_64</arch> -->
+							<!-- </environment> -->
+							<!-- <environment> -->
+							<!-- <os>macosx</os> -->
+							<!-- <ws>cocoa</ws> -->
+							<!-- <arch>x86</arch> -->
+							<!-- </environment> -->
+							<environment>
+								<os>macosx</os>
+								<ws>cocoa</ws>
+								<arch>x86_64</arch>
+							</environment>
+						</environments>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<version>${tycho-version}</version>
+					<artifactId>tycho-maven-plugin</artifactId>
+					<extensions>true</extensions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-compiler-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<encoding>UTF-8</encoding>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.5</version>
+					<configuration>
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<!-- enable tycho build -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<extensions>true</extensions>
+			</plugin>
+
+			<!-- configure target platform resolution -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

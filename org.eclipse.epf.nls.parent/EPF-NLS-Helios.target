@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="EPF-NLS-Helios">
+<locations>
+<location includeAllPlatforms="true" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.babel.nls_eclipse_pt_BR.feature.group" version="3.6.0.v20111128075308"/>
+<unit id="org.eclipse.babel.nls_rt.equinox.p2_pt_BR.feature.group" version="3.6.0.v20111128075308"/>
+<unit id="org.eclipse.babel.nls_technology.egit_pt_BR.feature.group" version="3.6.0.v20111128075308"/>
+<unit id="org.eclipse.babel.nls_tools.mylyn_pt_BR.feature.group" version="3.6.0.v20111128075308"/>
+<repository location="http://download.eclipse.org/technology/babel/update-site/R0.9.1/helios"/>
+</location>
+<location includeAllPlatforms="true" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.rcp.feature.group" version="3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY"/>
+<unit id="org.eclipse.epf.base.feature.feature.group" version="1.5.0.201112062208"/>
+<unit id="org.eclipse.epf.common.html.feature.feature.group" version="1.5.0.201112062208"/>
+<unit id="org.eclipse.epf.doc.feature.feature.group" version="1.2.0.201112062208"/>
+<unit id="org.eclipse.epf.platform.feature.feature.group" version="1.2.0.201112062208"/>
+<unit id="org.eclipse.epf.rcp.feature.feature.group" version="1.5.0.201112062208"/>
+<unit id="org.eclipse.epf.richtext.feature.feature.group" version="1.6.0.201112062208"/>
+<repository location="jar:file:/Users/cvgaviao/Development/Development_Eclipse/EPF-Composer/org.eclipse.epf.p2.core/target/org.eclipse.epf.p2.core.zip!/"/>
+</location>
+</locations>
+</target>

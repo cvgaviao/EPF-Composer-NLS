@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.epf.product.feature.nls1_1.5.0.qualifier.jar" id="org.eclipse.epf.product.feature.nls1" version="1.5.0.qualifier">
+      <category name="epf_category_2"/>
+   </feature>
+   <category-def name="epf_category_2" label="EPF National Language Fragment Features - 1">
+      <description>
+         Contains the followings languages: DE, FR, IT, JA, KO, PT-BR, ZH-TW, ZH.
+      </description>
+   </category-def>
+</site>

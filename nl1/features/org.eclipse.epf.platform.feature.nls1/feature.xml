@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epf.platform.feature.nls1"
+      label="EPF Platform Feature"
+      version="1.2.0.qualifier"
+      provider-name="Eclipse.org"
+      plugin="org.eclipse.epf.platform"
+      os="linux,win32"
+      ws="gtk,win32"
+      arch="x86"
+      image="eclipse_update_120.jpg">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %licenseText
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://update.eclipse.org/updates/3.2"/>
+   </url>
+
+   <includes
+         id="org.eclipse.babel.nls_eclipse_pt_BR"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.babel.nls_tools.mylyn_pt_BR"
+         version="0.0.0"/>
+
+</feature>
