@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epf.platform.feature.nls1"
-      label="EPF Platform Feature"
+      label="%featureName"
       version="1.2.0.qualifier"
-      provider-name="Eclipse.org"
+      provider-name="%providerName"
       plugin="org.eclipse.epf.platform"
       os="linux,win32"
       ws="gtk,win32"

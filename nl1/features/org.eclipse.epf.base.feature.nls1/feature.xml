@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epf.base.feature.nls1"
-      label="EPF Composer Base NLS1 Feature"
+      label="%featureName"
       version="1.5.0.qualifier"
-      provider-name="Eclipse"
+      provider-name="%providerName"
       plugin="org.eclipse.epf.base">
 
    <description>
@@ -142,13 +142,13 @@
          fragment="true"
          unpack="false"/>
 
-	<plugin
+   <plugin
          id="org.eclipse.epf.publish.layout.nl1"
          download-size="0"
          install-size="0"
          version="0.0.0"
          fragment="true"/>
-         
+
    <plugin
          id="org.eclipse.epf.publishing.nl1"
          download-size="0"
