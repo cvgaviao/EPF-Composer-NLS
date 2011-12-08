@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epf.common.html.feature.nls1"
+      label="%featureName"
+      version="1.5.0.qualifier"
+      provider-name="%providerName"
+      plugin="org.eclipse.epf.common.html"
+      image="eclipse_update_120.jpg">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %licenseText
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.epf.common.html" version="1.5.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epf.common.html.nl1"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

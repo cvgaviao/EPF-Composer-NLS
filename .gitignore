@@ -1,0 +1,8 @@
+.settings/
+.project
+target/
+.classpath
+CVS/
+bin/
+/workspace
+*.jar
